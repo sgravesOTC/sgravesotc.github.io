@@ -5,3 +5,21 @@
     Assignment: Final Project
 
 */
+:root{
+    --primary: #fdd6d6;
+    --dark: #202044;
+    --light: #f4c8ff;
+    --shadow:#5e4256;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
