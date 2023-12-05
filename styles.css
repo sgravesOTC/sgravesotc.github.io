@@ -11,7 +11,8 @@
     --light: rgb(222, 252, 255);
     --shadow: 0 1px 5px rgb(10, 26, 27);
 }
-html{
+
+html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
@@ -27,12 +28,13 @@ nav {
     box-shadow: var(--shadow);
     border-bottom: solid 2px var(--light);
 }
+
 nav ul {
     display: grid;
     grid-gap: 20px;
     list-style: none;
     padding: 0;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
 }
 
@@ -42,32 +44,37 @@ nav ul li a {
     font-size: 1rem;
     color: var(--light);
 }
+
 /* Tables */
 
 table,
-th, 
-td{
+th,
+td {
     border: 2px var(--light) solid;
     margin: auto;
     margin-top: 5%;
     text-align: center;
-    
+
 }
-td{
+
+td {
     padding: 10px;
 }
-table{
+
+table {
     width: 80%;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background-color: var(--dark);
     color: var(--light);
 }
-tr:nth-child(odd){
+
+tr:nth-child(odd) {
     background-color: white;
 }
 
-.tables{
+.tables {
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(2, 1fr);
@@ -82,7 +89,8 @@ body {
     padding: 0;
     line-height: 1.5;
 }
-h1{
+
+h1 {
     font-size: 2rem;
     text-align: center;
 }
@@ -96,7 +104,7 @@ h1{
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10%;
-    
+
 }
 
 img {
@@ -107,10 +115,10 @@ img {
     border: solid 2px var(--light);
 }
 
-.right-side{
+.right-side {
     padding-top: 25%;
     padding-bottom: 25%;
-    
+
 }
 
 .right-side p {
@@ -119,9 +127,9 @@ img {
     padding-top: 5%;
 }
 
-.goals {
-    margin: 0 10% 10% 10%;
-    padding-left: 5%;
+.centeredBoxed {
+    margin: 2% 10% 10% 10%;
+    padding: 0 5% 0 5%;
     font-weight: bold;
     font-size: 1.5rem;
     background-color: white;
@@ -133,7 +141,7 @@ img {
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     margin: 5%;
-    
+
 }
 
 .hobbies p {
@@ -141,6 +149,52 @@ img {
     font-size: 1rem;
 }
 
+/* Forms */
+form{
+    background-color: white;
+    border: solid 2px var(--dark);
+}
+
+fieldset {
+    margin: 5%;
+    border: solid 2px var(--dark);
+    color: var(--dark);
+}
+
+legend{
+    background-color: var(--primary);
+    border: solid 2px var(--dark);
+    color: var(--light);
+}
+
+label {
+    display: block;
+    padding-bottom: 1%;
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 15%;
+    width: 50%;
+}
+
+.submit {
+    width: 15%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: var(--dark);
+    border: solid 2px white;
+    color: var(--light);
+}
+
+
+
+.userContact {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+}
 
 
 

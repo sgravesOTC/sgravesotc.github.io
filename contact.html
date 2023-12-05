@@ -16,6 +16,56 @@
 <body>
     <div id="navBar"></div>
 
+    <div class="contactMe">
+        <div class="centeredBoxed">
+            <p>
+                If you'd like to contact me you can do so with the following:
+            </p>
+            <p>
+                Student Email: <a href="mail: sg0989463@otc.edu">sg0989463@otc.edu</a>
+            </p>
+            <p>
+                Phone:(417)741-2483
+
+            </p>
+            <p>
+                Or you can put your information below and I will reach out to you.
+            </p>
+        </div>
+        <div class="userContact">
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="userName">
+                        Name:
+                        <input type="text" name="userName" id="userName" required placeholder="Name" autofocus>
+                    </label>
+                    <label for="userEmail">
+                        Email:
+                        <input type="email" name="userEmail" id="userEmail" required placeholder="email@example.com">
+                    </label>
+                    <label for="userTel">
+                        Phone:
+                        <input type="tel" name="userTel" id="userTel" required placeholder="(000)000-0000">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred Form of Contact (Optional)</legend>
+                    <label for="togPhone">
+                        Phone
+                        <input type="checkbox" name="togPhone" id="togPhone" value="Phone">
+                    </label>
+                    <label for="togEmail">
+                        Email
+                        <input type="checkbox" name="togEmail" id="togEmail" value="Email">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+
+
+    </div>
 
 
 
@@ -32,7 +82,6 @@
 
 
 
-    
     <div id="footer"></div>
 
     <script src="scripts.js"></script>
