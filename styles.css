@@ -5,21 +5,140 @@
     Assignment: Final Project
 
 */
-:root{
-    --primary: #fdd6d6;
-    --dark: #202044;
-    --light: #f4c8ff;
-    --shadow:#5e4256;
+:root {
+    --primary: rgb(128, 185, 190);
+    --dark: rgb(25, 74, 78);
+    --light: rgb(222, 252, 255);
+    --shadow: 0 1px 5px rgb(10, 26, 27);
+}
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
 }
 
-body{
-    background-color: var(--primary);
+
+/* Nav Bar */
+
+nav {
+    background-color: var(--dark);
+    color: var(--light);
+    display: grid;
+    box-shadow: var(--shadow);
+    border-bottom: solid 2px var(--light);
 }
+nav ul {
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--light);
+}
+/* Tables */
+
+table,
+th, 
+td{
+    border: 2px var(--light) solid;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+td{
+    padding: 10px;
+}
+table{
+    width: 80%;
+}
+tr:nth-child(even){
+    background-color: var(--dark);
+    color: var(--light);
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+
+.tables{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+/* Body */
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10%;
+    
+}
+
+img {
+    box-shadow: var(--shadow);
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    border: solid 2px var(--light);
+}
+
+.right-side{
+    padding-top: 25%;
+    padding-bottom: 25%;
+    
+}
+
+.right-side p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.goals {
+    margin: 0 10% 10% 10%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: white;
+    border: solid 2px var(--dark);
+}
+
+
+
+
 
 /* Footer */
 
-footer{
+
+footer {
     background-color: var(--dark);
     color: var(--light);
     text-align: center;
+    box-shadow: var(--shadow);
+    border-top: solid 2px var(--light);
 }
