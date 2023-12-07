@@ -22,7 +22,7 @@
                 If you'd like to contact me you can do so with the following:
             </p>
             <p>
-                Student Email: <a href="mail: sg0989463@otc.edu">sg0989463@otc.edu</a>
+                Student Email: <a href="mailto:sg0989463@otc.edu">sg0989463@otc.edu</a>
             </p>
             <p>
                 Phone:(417)741-2483
@@ -46,8 +46,9 @@
                     </label>
                     <label for="userTel">
                         Phone:
-                        <input type="tel" name="userTel" id="userTel" required placeholder="(000)000-0000">
+                        <input type="tel" name="userTel" id="userTel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">  
                     </label>
+                    <p id="phoneTip">Phone format: 000-000-0000</p>
                 </fieldset>
                 <fieldset>
                     <legend>Preferred Form of Contact (Optional)</legend>
@@ -59,6 +60,16 @@
                         Email
                         <input type="checkbox" name="togEmail" id="togEmail" value="Email">
                     </label>
+                    <label for="togText">
+                        Text
+                        <input type="checkbox" name="togText" id="togText" value="Text">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information (Optional)</legend>
+
+                    <textarea name="addInfo" id="addInfo" placeholder="Please put any further information here..."></textarea>
+
                 </fieldset>
                 <input type="submit" value="Submit" class="submit">
             </form>

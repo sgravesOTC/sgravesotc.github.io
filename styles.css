@@ -159,6 +159,7 @@ fieldset {
     margin: 5%;
     border: solid 2px var(--dark);
     color: var(--dark);
+    
 }
 
 legend{
@@ -188,6 +189,18 @@ input {
     color: var(--light);
 }
 
+#phoneTip{
+    text-align: center;
+    font-size: .8rem;
+    color: gray;
+    margin-top: 0;
+}
+
+textarea {
+    height: 100px;
+    width: 75%;
+}
+
 
 
 .userContact {
@@ -208,4 +221,42 @@ footer {
     text-align: center;
     box-shadow: var(--shadow);
     border-top: solid 2px var(--light);
+}
+
+/* Media Query 500px or less */
+
+@media screen and (max-width: 500px) {
+    table{
+        font-size: .8rem;
+    }
+
+    .centeredBoxed{
+        font-size: .9rem;
+        height: 50%;
+    }
+    .container{
+        grid-template-columns: none;
+    }
+
+    .right-side{
+        padding: 0;
+
+    }
+
+    .hobbies{
+        grid-template-columns: none;
+    }
+
+    .baking {
+        display: none;
+    }
+
+    input{
+        left: 20%;
+        width: 75%
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
